@@ -1,0 +1,37 @@
+<Project Sdk="Microsoft.NET.Sdk.WindowsDesktop">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.0</TargetFramework>
+    <UseWPF>true</UseWPF>
+    <Authors>Ben Burns</Authors>
+    <Copyright>Ben Burns 2019</Copyright>
+    <PackageLicenseFile>COPYING</PackageLicenseFile>
+    <Description>Common WPF and MVVM code</Description>
+    <PackageProjectUrl>https://github.com/burnsba/BurnsBac.Mvvm</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/burnsba/BurnsBac.Mvvm</RepositoryUrl>
+    <RepositoryType>git</RepositoryType>
+    <PackageTags>mvvm, wpf</PackageTags>
+    <NeutralLanguage>en-US</NeutralLanguage>
+    <FileVersion>1.1.1.1</FileVersion>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <DocumentationFile>C:\Users\tolos\code\csharp\BurnsBac.Mvvm\BurnsBac.Mvvm\BurnsBac.Mvvm.xml</DocumentationFile>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Include="..\.editorconfig" Link=".editorconfig" />
+    <None Include="..\COPYING">
+      <Pack>True</Pack>
+      <PackagePath></PackagePath>
+    </None>
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="StyleCop.Analyzers" Version="1.1.118">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+  </ItemGroup>
+
+</Project>
